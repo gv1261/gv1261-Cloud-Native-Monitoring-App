@@ -1,44 +1,42 @@
-Cloud Native Resource Monitoring Python App on K8s!
-Things you will Learn
+# Cloud Native Resource Monitoring Python App on K8s!
+# Things you will Learn
 
-Python and How to create Monitoring Application in Python using Flask and psutil
-How to run a Python App locally.
-Learn Docker and How to containerize a Python application
-Creating Dockerfile
-Building DockerImage
-Running Docker Container
-Docker Commands
+1.Python and How to create Monitoring Application in Python using Flask and psutil
+2.How to run a Python App locally.
+3.Learn Docker and How to containerize a Python application
+  i.Creating Dockerfile
+  ii.Building DockerImage
+  iii.Running Docker Container
+  iv.Docker Commands
+4.Create ECR repository using Python Boto3 and pushing Docker Image to ECR
+5.Learn Kubernetes and Create EKS cluster and Nodegroups
+6.Create Kubernetes Deployments and Services using Python!
 
-Create ECR repository using Python Boto3 and pushing Docker Image to ECR
+# Prerequisites !
+(Things to have before starting the project)
+  i.AWS Account
+  ii.Programmatic access and AWS configured with CLI.
+  iii.Python3 Installed.
+  iv.Docker and Kubectl installed.
+  v.Code editor (Vscode)
 
-Learn Kubernetes and Create EKS cluster and Nodegroups
-Create Kubernetes Deployments and Services using Python!
-
-Prerequisites !
-(Things to have before starting the projects)
- AWS Account.
- Programmatic access and AWS configured with CLI.
- Python3 Installed.
- Docker and Kubectl installed.
- Code editor (Vscode)
-
- Let’s Start the Project 
-Part 1: Deploying the Flask application locally
-Step 1: Clone the code
+# Let’s Start the Project 
+## Part 1: Deploying the Flask application locally
+# Step 1: Clone the code
 Clone the code from the repository:
 git clone <repository_url>
-Step 2: Install dependencies
+
+# Step 2: Install dependencies
 The application uses the psutil and Flask, Plotly, boto3 libraries. Install them using pip:
-
 pip3 install -r requirements.txt
-Step 3: Run the application
-To run the application, navigate to the root directory of the project and execute the following command:
 
+# Step 3: Run the application
+To run the application, navigate to the root directory of the project and execute the following command:
 python3 app.py
 This will start the Flask server on localhost:5000. Navigate to http://localhost:5000/ on your browser to access the application.
 
-Part 2: Dockerizing the Flask application
-Step 1: Create a Dockerfile
+## Part 2: Dockerizing the Flask application
+# Step 1: Create a Dockerfile
 Create a Dockerfile in the root directory of the project with the following contents:
 
 # Use the official Python image as the base image
